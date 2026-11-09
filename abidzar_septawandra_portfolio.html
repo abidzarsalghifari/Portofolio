@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abidzar Septawandra Al-Ghifari | Finance Management & Accounting Associate</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0B0F19',
+                        darkCard: '#111827',
+                        darkBorder: '#1F2937',
+                        accentCyan: '#06B6D4',
+                        accentEmerald: '#10B981',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0B0F19;
+            color: #F9FAFB;
+            overflow-x: hidden;
+        }
+
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.15);
+        }
+
+        .glow-effect-emerald {
+            box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.15);
+        }
+
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        
+        .glass-nav {
+            background: rgba(11, 15, 25, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0F19;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1F2937;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #06B6D4;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 glass-nav border-b border-gray-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand / Logo -->
+                <a href="#hero" class="group flex items-center space-x-3 text-xl font-bold tracking-tight text-white">
+                    <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-emerald-500 text-slate-950 font-extrabold text-lg shadow-lg group-hover:scale-105 transition-transform duration-300">
+                        AS
+                    </span>
+                    <span class="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent group-hover:text-cyan-400 transition-colors">
+                        Abidzar S. Al-Ghifari
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                    <a href="#hero" class="px-3.5 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400 rounded-lg hover:bg-white/5 transition-all">Home</a>
+                    <a href="#about" class="px-3.5 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400 rounded-lg hover:bg-white/5 transition-all">About</a>
+                    <a href="#experience" class="px-3.5 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400 rounded-lg hover:bg-white/5 transition-all">Experience</a>
+                    <a href="#portfolio" class="px-3.5 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400 rounded-lg hover:bg-white/5 transition-all">Projects</a>
+                    <a href="#skills" class="px-3.5 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400 rounded-lg hover:bg-white/5 transition-all">Skills</a>
+                    <a href="#achievements" class="px-3.5 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400 rounded-lg hover:bg-white/5 transition-all">Achievements</a>
+                    <a href="#contact" class="px-3.5 py-2 text-sm font-medium text-gray-300 hover:text-cyan-400 rounded-lg hover:bg-white/5 transition-all">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold rounded-lg group bg-gradient-to-br from-cyan-500 to-emerald-500 text-white shadow-md hover:shadow-cyan-500/20 transition-all">
+                        <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-[7px] group-hover:bg-opacity-0">
+                            Get in Touch
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex md:hidden">
+                    <button id="mobile-menu-btn" type="button" class="p-2.5 rounded-xl text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none" aria-label="Toggle Navigation">
+                        <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
+                        <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-gray-800 bg-darkBg/95 backdrop-blur-xl px-4 pt-3 pb-6 space-y-2">
+            <a href="#hero" class="mobile-nav-link block px-4 py-2.5 text-base font-medium text-gray-200 hover:bg-gray-800/70 hover:text-cyan-400 rounded-xl transition-all">Home</a>
+            <a href="#about" class="mobile-nav-link block px-4 py-2.5 text-base font-medium text-gray-200 hover:bg-gray-800/70 hover:text-cyan-400 rounded-xl transition-all">About</a>
+            <a href="#experience" class="mobile-nav-link block px-4 py-2.5 text-base font-medium text-gray-200 hover:bg-gray-800/70 hover:text-cyan-400 rounded-xl transition-all">Experience</a>
+            <a href="#portfolio" class="mobile-nav-link block px-4 py-2.5 text-base font-medium text-gray-200 hover:bg-gray-800/70 hover:text-cyan-400 rounded-xl transition-all">Projects</a>
+            <a href="#skills" class="mobile-nav-link block px-4 py-2.5 text-base font-medium text-gray-200 hover:bg-gray-800/70 hover:text-cyan-400 rounded-xl transition-all">Skills</a>
+            <a href="#achievements" class="mobile-nav-link block px-4 py-2.5 text-base font-medium text-gray-200 hover:bg-gray-800/70 hover:text-cyan-400 rounded-xl transition-all">Achievements</a>
+            <a href="#contact" class="mobile-nav-link block px-4 py-2.5 text-base font-medium text-gray-200 hover:bg-gray-800/70 hover:text-cyan-400 rounded-xl transition-all">Contact</a>
+            <div class="pt-2">
+                <a href="#contact" class="mobile-nav-link w-full flex items-center justify-center px-5 py-3 text-center text-sm font-bold text-darkBg bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-xl shadow-lg">
+                    Contact for Work
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-grid-pattern">
+        <!-- Interactive Canvas Background -->
+        <canvas id="hero-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
+        
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+            
+            <!-- Personal Image with Glow Ring -->
+            <div class="relative mb-6 group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-500"></div>
+                <img src="Gemini_Generated_Image_ta0ze0ta0ze0ta0z.png" alt="Abidzar Septawandra Al-Ghifari" class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover border-2 border-slate-900 shadow-2xl">
+            </div>
+
+            <!-- Role Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-xs sm:text-sm font-semibold mb-6 backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Bank Rakyat Indonesia — Finance Management & Accounting Associate</span>
+            </div>
+
+            <!-- Full Name Headline -->
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4">
+                Abidzar Septawandra Al-Ghifari
+            </h1>
+
+            <!-- Summary -->
+            <p class="max-w-3xl mx-auto text-base sm:text-lg text-gray-300 font-normal leading-relaxed mb-8">
+                Financial and Management Accounting professional with hands-on experience in pension fund (DPLK) accounting, portfolio reconciliation, and regulatory compliance.
+            </p>
+
+            <!-- Quick Contacts Info Strip -->
+            <div class="flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm text-gray-400 mb-8">
+                <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-4 h-4 text-cyan-400"></i> Jakarta, Indonesia</span>
+                <span class="hidden sm:inline text-gray-700">•</span>
+                <a href="mailto:abidzars.alghifari@gmail.com" class="flex items-center gap-1.5 hover:text-cyan-400 transition-colors"><i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i> abidzars.alghifari@gmail.com</a>
+                <span class="hidden sm:inline text-gray-700">•</span>
+                <a href="https://linkedin.com/in/abidzarsalghifari" target="_blank" rel="noopener" class="flex items-center gap-1.5 hover:text-cyan-400 transition-colors"><i data-lucide="linkedin" class="w-4 h-4 text-cyan-400"></i> linkedin.com/in/abidzarsalghifari</a>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+                <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-bold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-xl hover:opacity-90 transition-all transform hover:-translate-y-0.5 shadow-lg shadow-cyan-500/20">
+                    <span>Contact For Work</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#portfolio" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-bold text-gray-200 border border-gray-700 hover:border-cyan-500/50 bg-darkCard/80 hover:bg-gray-800/80 rounded-xl transition-all transform hover:-translate-y-0.5 backdrop-blur-md">
+                    <span>View Projects</span>
+                    <i data-lucide="briefcase" class="w-4 h-4 text-cyan-400"></i>
+                </a>
+                <a href="https://ristek.link/AbidzarPorto" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-cyan-400 border border-cyan-500/40 bg-cyan-500/10 hover:bg-cyan-500/20 rounded-xl transition-all">
+                    <span>CV Link</span>
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT ME SECTION -->
+    <section id="about" class="py-24 bg-darkBg border-t border-gray-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                
+                <!-- Profile Image Showcase -->
+                <div class="w-full lg:w-5/12 flex justify-center">
+                    <div class="relative group w-full max-w-md">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                        <div class="relative rounded-3xl bg-darkCard border border-gray-800 p-4 sm:p-6 shadow-2xl overflow-hidden">
+                            <img src="Gemini_Generated_Image_ta0ze0ta0ze0ta0z.png" alt="Abidzar Septawandra Al-Ghifari Profile" class="w-full h-80 sm:h-96 rounded-2xl object-cover object-top border border-gray-800 shadow-md">
+                            <div class="mt-4 p-3 rounded-xl bg-gray-900/90 border border-gray-800 flex items-center justify-between">
+                                <div>
+                                    <h3 class="text-sm font-bold text-white">Universitas Lampung</h3>
+                                    <p class="text-xs text-cyan-400 font-medium">B.S. in Accounting (GPA 3.76)</p>
+                                </div>
+                                <span class="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20">Cum Laude</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Detailed Bio & Highlights -->
+                <div class="w-full lg:w-7/12">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-3 border border-cyan-500/20">
+                        <i data-lucide="user" class="w-3.5 h-3.5"></i>
+                        <span>About Me</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+                        Driven Financial Precision & Regulatory Integrity
+                    </h2>
+
+                    <p class="text-gray-300 text-base leading-relaxed mb-6">
+                        I am a Finance Management & Accounting Associate at Bank Rakyat Indonesia (BRI) specializing in pension fund (DPLK) oversight, bond valuation framework development, and core system data migrations. My track record spans resolving high-materiality accounting anomalies, preparing corporate investment memorandum, and automating financial simulation sheets.
+                    </p>
+                    
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                        Prior to BRI, I gained regulatory experience at Otoritas Jasa Keuangan (OJK) evaluating creditworthiness across 1,000+ institution accounts, worked in corporate tax compliance at MUC Consulting navigating CoreTax systems, and conducted empirical financial research at Universitas Lampung.
+                    </p>
+
+                    <!-- 4 Key Stat Cards -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-gray-800">
+                        <div class="p-4 rounded-xl bg-darkCard border border-gray-800/80">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">1,000+</div>
+                            <div class="text-[11px] uppercase tracking-wider font-semibold text-gray-400 mt-1">Accounts Analyzed</div>
+                            <div class="text-[10px] text-gray-500 mt-1">OJK SLIK Credit Assessment</div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-darkCard border border-gray-800/80">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">3.76</div>
+                            <div class="text-[11px] uppercase tracking-wider font-semibold text-gray-400 mt-1">Academic GPA</div>
+                            <div class="text-[10px] text-gray-500 mt-1">Universitas Lampung</div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-darkCard border border-gray-800/80">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">6</div>
+                            <div class="text-[11px] uppercase tracking-wider font-semibold text-gray-400 mt-1">Publications</div>
+                            <div class="text-[10px] text-gray-500 mt-1">Conference Reports</div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-darkCard border border-gray-800/80">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">CFTR</div>
+                            <div class="text-[11px] uppercase tracking-wider font-semibold text-gray-400 mt-1">Certified Tax</div>
+                            <div class="text-[10px] text-gray-500 mt-1">& Brevet A&B</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PROFESSIONAL EXPERIENCE TIMELINE -->
+    <section id="experience" class="py-24 bg-slate-950/70 border-t border-gray-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-3 border border-emerald-500/20">
+                    <i data-lucide="briefcase" class="w-3.5 h-3.5"></i>
+                    <span>Career Track</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+                    Professional Experience
+                </h2>
+                <p class="text-gray-400 text-base">
+                    Hands-on roles across enterprise banking, corporate tax consulting, financial regulation, and academic research.
+                </p>
+            </div>
+
+            <!-- Timeline Tree -->
+            <div class="relative border-l-2 border-gray-800 ml-4 md:ml-32 space-y-12">
+                
+                <!-- Experience 1: BRI -->
+                <div class="relative pl-8 md:pl-10 group">
+                    <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-cyan-500/20 border-2 border-cyan-400 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="building-2" class="w-4 h-4"></i>
+                    </div>
+                    <div class="rounded-2xl bg-darkCard border border-gray-800 p-6 md:p-8 hover:border-cyan-500/40 transition-all shadow-xl">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">Bank Rakyat Indonesia (BRI)</h3>
+                                <p class="text-sm font-semibold text-cyan-400">Finance Management and Accounting Associate</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-semibold w-max">
+                                Nov 2025 – Present
+                            </span>
+                        </div>
+                        <ul class="space-y-2.5 text-gray-300 text-sm list-disc list-inside">
+                            <li><strong class="text-white">Financial Integrity & Audit:</strong> Successfully identified and resolved a high-materiality accounting discrepancy at fiscal year-end by performing forensic-level reconciliation of isolated journal entries.</li>
+                            <li><strong class="text-white">Technical Innovation:</strong> Designed a custom Excel framework using conditional logic to accurately price Zero-Coupon Corporate Bonds, overcoming standard software limitations.</li>
+                            <li><strong class="text-white">Investment Analysis & Limits:</strong> Prepared investment analysis memorandums for banking, corporate, and investment management entities to establish strategic limits.</li>
+                            <li><strong class="text-white">Asset Management Oversight:</strong> Conducted monthly deposit interest reconciliations and corrected non-compliant assets in the Pension Fund (DPLK) portfolio.</li>
+                            <li><strong class="text-white">System Migration:</strong> Structured investment portfolio data to facilitate seamless data migration to the new core platform.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2: MUC Consulting -->
+                <div class="relative pl-8 md:pl-10 group">
+                    <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-emerald-500/20 border-2 border-emerald-400 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="receipt" class="w-4 h-4"></i>
+                    </div>
+                    <div class="rounded-2xl bg-darkCard border border-gray-800 p-6 md:p-8 hover:border-emerald-500/40 transition-all shadow-xl">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">MUC Consulting</h3>
+                                <p class="text-sm font-semibold text-emerald-400">Tax Intern</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-semibold w-max">
+                                May 2025 – Nov 2025
+                            </span>
+                        </div>
+                        <ul class="space-y-2.5 text-gray-300 text-sm list-disc list-inside">
+                            <li><strong class="text-white">Tax Compliance & Verification:</strong> Verified financial documents and cross-entity transactions to ensure full alignment with national tax regulations.</li>
+                            <li><strong class="text-white">CoreTax Integration:</strong> Operated the CoreTax system for input tax credit processing, ensuring document integrity and mitigating risk.</li>
+                            <li><strong class="text-white">Digital Archiving:</strong> Initiated a digital archiving system for administrative documents, accelerating internal audit readiness.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3: Otoritas Jasa Keuangan (OJK) -->
+                <div class="relative pl-8 md:pl-10 group">
+                    <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-cyan-500/20 border-2 border-cyan-400 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check" class="w-4 h-4"></i>
+                    </div>
+                    <div class="rounded-2xl bg-darkCard border border-gray-800 p-6 md:p-8 hover:border-cyan-500/40 transition-all shadow-xl">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">Otoritas Jasa Keuangan (OJK)</h3>
+                                <p class="text-sm font-semibold text-cyan-400">Finance Regulatory Intern</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-semibold w-max">
+                                Mar 2024 – May 2024
+                            </span>
+                        </div>
+                        <ul class="space-y-2.5 text-gray-300 text-sm list-disc list-inside">
+                            <li><strong class="text-white">Credit Risk Assessment:</strong> Conducted creditworthiness analysis on over 1,000 accounts via the SLIK system.</li>
+                            <li><strong class="text-white">Economic Research & Modeling:</strong> Applied quantitative Location Quotient (LQ) and Dynamic Location Quotient (DLQ) methods to evaluate regional economic performance.</li>
+                            <li><strong class="text-white">Regulatory Monitoring:</strong> Supported financial data oversight for non-bank financial institutions to ensure OJK regulatory alignment.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 4: Universitas Lampung Research Assistant -->
+                <div class="relative pl-8 md:pl-10 group">
+                    <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-emerald-500/20 border-2 border-emerald-400 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
+                        <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                    </div>
+                    <div class="rounded-2xl bg-darkCard border border-gray-800 p-6 md:p-8 hover:border-emerald-500/40 transition-all shadow-xl">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Accounting Dept Universitas Lampung</h3>
+                                <p class="text-sm font-semibold text-emerald-400">Research Assistant & Teaching Assistant</p>
+                            </div>
+                            <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-semibold w-max">
+                                Jan 2023 – Sep 2024
+                            </span>
+                        </div>
+                        <ul class="space-y-2.5 text-gray-300 text-sm list-disc list-inside">
+                            <li><strong class="text-white">Quantitative Analytics:</strong> Extracted, cleaned, and statistically analyzed 500+ financial datasets for empirical research.</li>
+                            <li><strong class="text-white">Academic Publications:</strong> Co-authored 6 qualitative and financial reports on corporate governance and accounting conservatism.</li>
+                            <li><strong class="text-white">Teaching Support:</strong> Served as Teaching Assistant for Cost Accounting, supporting over 50 students.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PORTFOLIO / PROJECTS SECTION -->
+    <section id="portfolio" class="py-24 bg-darkBg border-t border-gray-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-3 border border-cyan-500/20">
+                    <i data-lucide="folder-git-2" class="w-3.5 h-3.5"></i>
+                    <span>Key Projects & Initiatives</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+                    Featured Work & Case Studies
+                </h2>
+                <p class="text-gray-400 text-base">
+                    Highlights from banking financial engineering, regulatory modeling, tax digitization, and community mentorship.
+                </p>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12">
+                <button data-filter="all" class="filter-btn px-5 py-2.5 text-xs sm:text-sm font-semibold rounded-xl border border-cyan-500/40 bg-cyan-500/10 text-cyan-300 transition-all">
+                    All Projects
+                </button>
+                <button data-filter="finance" class="filter-btn px-5 py-2.5 text-xs sm:text-sm font-semibold rounded-xl border border-gray-800 bg-darkCard text-gray-400 hover:text-white hover:border-gray-700 transition-all">
+                    Finance & Banking
+                </button>
+                <button data-filter="tax" class="filter-btn px-5 py-2.5 text-xs sm:text-sm font-semibold rounded-xl border border-gray-800 bg-darkCard text-gray-400 hover:text-white hover:border-gray-700 transition-all">
+                    Tax & Regulatory
+                </button>
+                <button data-filter="education" class="filter-btn px-5 py-2.5 text-xs sm:text-sm font-semibold rounded-xl border border-gray-800 bg-darkCard text-gray-400 hover:text-white hover:border-gray-700 transition-all">
+                    Research & Education
+                </button>
+            </div>
+
+            <!-- 6 Project Cards Grid -->
+            <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="project-card group rounded-2xl bg-darkCard border border-gray-800/80 hover:border-cyan-500/50 overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1 shadow-xl" data-category="finance">
+                    <div class="relative h-44 w-full bg-slate-900 border-b border-gray-800 flex items-center justify-center p-6">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-cyan-950/40 to-slate-900 opacity-80"></div>
+                        <div class="relative z-10 text-center">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mx-auto mb-2">
+                                <i data-lucide="calculator" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-xs font-mono text-cyan-400">BRI • BOND VALUATION</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                                Custom Bond Valuation Logic
+                            </h3>
+                            <p class="text-gray-400 text-sm line-clamp-2 mb-4">
+                                Optimized bond pricing workflow by designing an Excel framework for Zero-Coupon Corporate Bonds.
+                            </p>
+                        </div>
+                        <button onclick="openModal('Custom Bond Valuation Framework', 'Designed a specialized Excel model utilizing advanced conditional logic to accurately price Zero-Coupon Corporate Bonds, overcoming standard legacy software limitations at BRI.', 'Finance & Banking', 'Accurate Bond Pricing Solution')" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-gray-200 border border-gray-700 hover:border-cyan-500/50 bg-gray-800/50 hover:bg-cyan-500/10 rounded-xl transition-all">
+                            <span>View Details</span>
+                            <i data-lucide="external-link" class="w-4 h-4 text-cyan-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-card group rounded-2xl bg-darkCard border border-gray-800/80 hover:border-emerald-500/50 overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1 shadow-xl" data-category="finance">
+                    <div class="relative h-44 w-full bg-slate-900 border-b border-gray-800 flex items-center justify-center p-6">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-emerald-950/40 to-slate-900 opacity-80"></div>
+                        <div class="relative z-10 text-center">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mx-auto mb-2">
+                                <i data-lucide="layers" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-xs font-mono text-emerald-400">BRI • DPLK PENSION</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors mb-2">
+                                DPLK Pension Reconciliation
+                            </h3>
+                            <p class="text-gray-400 text-sm line-clamp-2 mb-4">
+                                Developed simulation worksheets and rectified non-compliant assets in pension fund portfolios.
+                            </p>
+                        </div>
+                        <button onclick="openModal('DPLK Pension Fund Asset Oversight', 'Executed monthly deposit interest reconciliations, created equity fund benchmarking simulation sheets, and resolved four non-compliant assets in DPLK pension portfolio.', 'Finance & Banking', '4 Asset Discrepancies Corrected')" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-gray-200 border border-gray-700 hover:border-emerald-500/50 bg-gray-800/50 hover:bg-emerald-500/10 rounded-xl transition-all">
+                            <span>View Details</span>
+                            <i data-lucide="external-link" class="w-4 h-4 text-emerald-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card group rounded-2xl bg-darkCard border border-gray-800/80 hover:border-cyan-500/50 overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1 shadow-xl" data-category="tax">
+                    <div class="relative h-44 w-full bg-slate-900 border-b border-gray-800 flex items-center justify-center p-6">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-cyan-950/40 to-slate-900 opacity-80"></div>
+                        <div class="relative z-10 text-center">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mx-auto mb-2">
+                                <i data-lucide="file-check" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-xs font-mono text-cyan-400">MUC • CORETAX SYSTEM</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                                CoreTax Integration & Audit Prep
+                            </h3>
+                            <p class="text-gray-400 text-sm line-clamp-2 mb-4">
+                                Operated CoreTax system for input tax credit processing and built digital archiving workflows.
+                            </p>
+                        </div>
+                        <button onclick="openModal('CoreTax Compliance & Archiving System', 'Performed cross-entity document verifications and integrated digital archiving workflows to accelerate internal tax audit readiness and reduce non-compliance risks.', 'Tax & Regulatory', 'Audit Speed Accelerated')" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-gray-200 border border-gray-700 hover:border-cyan-500/50 bg-gray-800/50 hover:bg-cyan-500/10 rounded-xl transition-all">
+                            <span>View Details</span>
+                            <i data-lucide="external-link" class="w-4 h-4 text-cyan-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="project-card group rounded-2xl bg-darkCard border border-gray-800/80 hover:border-emerald-500/50 overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1 shadow-xl" data-category="tax">
+                    <div class="relative h-44 w-full bg-slate-900 border-b border-gray-800 flex items-center justify-center p-6">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-emerald-950/40 to-slate-900 opacity-80"></div>
+                        <div class="relative z-10 text-center">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mx-auto mb-2">
+                                <i data-lucide="shield-alert" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-xs font-mono text-emerald-400">OJK • SLIK ANALYSIS</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors mb-2">
+                                OJK SLIK Credit & LQ Modeling
+                            </h3>
+                            <p class="text-gray-400 text-sm line-clamp-2 mb-4">
+                                Evaluated creditworthiness on 1,000+ institution accounts and conducted regional economic DLQ modeling.
+                            </p>
+                        </div>
+                        <button onclick="openModal('OJK Credit Risk & Economic Modeling', 'Conducted comprehensive credit assessment of 1,000+ institutional accounts via SLIK and applied Location Quotient (LQ/DLQ) quantitative models for regional financial monitoring.', 'Tax & Regulatory', '1,000+ Accounts Analyzed')" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-gray-200 border border-gray-700 hover:border-emerald-500/50 bg-gray-800/50 hover:bg-emerald-500/10 rounded-xl transition-all">
+                            <span>View Details</span>
+                            <i data-lucide="external-link" class="w-4 h-4 text-emerald-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="project-card group rounded-2xl bg-darkCard border border-gray-800/80 hover:border-cyan-500/50 overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1 shadow-xl" data-category="education">
+                    <div class="relative h-44 w-full bg-slate-900 border-b border-gray-800 flex items-center justify-center p-6">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-cyan-950/40 to-slate-900 opacity-80"></div>
+                        <div class="relative z-10 text-center">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mx-auto mb-2">
+                                <i data-lucide="trending-up" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-xs font-mono text-cyan-400">STOCK MENTORSHIP</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-cyan-400 transition-colors mb-2">
+                                Beginner Stock Trading Program
+                            </h3>
+                            <p class="text-gray-400 text-sm line-clamp-2 mb-4">
+                                Led stock trading seminars and mentored 50+ beginners in Bandar Lampung, boosting literacy by 30%.
+                            </p>
+                        </div>
+                        <button onclick="openModal('Stock Trading Education & Mentoring', 'Organized seminars and guided 50+ novice investors through trading simulations, achieving a 30% increase in financial literacy metrics.', 'Research & Education', '+30% Financial Literacy')" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-gray-200 border border-gray-700 hover:border-cyan-500/50 bg-gray-800/50 hover:bg-cyan-500/10 rounded-xl transition-all">
+                            <span>View Details</span>
+                            <i data-lucide="external-link" class="w-4 h-4 text-cyan-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="project-card group rounded-2xl bg-darkCard border border-gray-800/80 hover:border-emerald-500/50 overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1 shadow-xl" data-category="education">
+                    <div class="relative h-44 w-full bg-slate-900 border-b border-gray-800 flex items-center justify-center p-6">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-emerald-950/40 to-slate-900 opacity-80"></div>
+                        <div class="relative z-10 text-center">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mx-auto mb-2">
+                                <i data-lucide="store" class="w-6 h-6"></i>
+                            </div>
+                            <span class="text-xs font-mono text-emerald-400">MSME E-CASM PROGRAM</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors mb-2">
+                                MSME E-Casm Empowerment
+                            </h3>
+                            <p class="text-gray-400 text-sm line-clamp-2 mb-4">
+                                Delivered e-commerce and financial reporting training to 20 local MSMEs in Lampung.
+                            </p>
+                        </div>
+                        <button onclick="openModal('Empowerment of Bandar Lampung MSMEs', 'Delivered structured financial management and social media marketing workshops for 20 local businesses, expanding online engagement by 30%.', 'Research & Education', '20 MSMEs Empowered')" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-gray-200 border border-gray-700 hover:border-emerald-500/50 bg-gray-800/50 hover:bg-emerald-500/10 rounded-xl transition-all">
+                            <span>View Details</span>
+                            <i data-lucide="external-link" class="w-4 h-4 text-emerald-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: SKILLS & CERTIFICATIONS -->
+    <section id="skills" class="py-24 bg-slate-950/80 border-t border-gray-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-3 border border-cyan-500/20">
+                    <i data-lucide="award" class="w-3.5 h-3.5"></i>
+                    <span>Skills & Certifications</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+                    Technical Expertise & Credentials
+                </h2>
+                <p class="text-gray-400 text-base">
+                    Core technical stack, regulatory software knowledge, and official tax certifications.
+                </p>
+            </div>
+
+            <!-- Grouped Skills Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                
+                <!-- Card 1: Technical & Software -->
+                <div class="rounded-2xl bg-darkCard border border-gray-800 p-6 sm:p-8 hover:border-cyan-500/40 transition-all shadow-xl">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6">
+                        <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-4">Technical & Analytics</h3>
+                    <div class="space-y-3">
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>Microsoft Excel (VBA, Models)</span>
+                            <span class="text-cyan-400">Expert</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>SPSS Data Analytics</span>
+                            <span class="text-cyan-400">Advanced</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>CoreTax System</span>
+                            <span class="text-cyan-400">Proficient</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>SLIK OJK Analysis</span>
+                            <span class="text-cyan-400">Expert</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Business & Accounting -->
+                <div class="rounded-2xl bg-darkCard border border-gray-800 p-6 sm:p-8 hover:border-emerald-500/40 transition-all shadow-xl">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-6">
+                        <i data-lucide="pie-chart" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-4">Financial & Accounting</h3>
+                    <div class="space-y-3">
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>Portfolio Reconciliation</span>
+                            <span class="text-emerald-400">Advanced</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>Bond Valuation & Yields</span>
+                            <span class="text-emerald-400">Advanced</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>DPLK Pension Fund Oversight</span>
+                            <span class="text-emerald-400">Expert</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>Credit Risk Assessment</span>
+                            <span class="text-emerald-400">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Certifications & Language -->
+                <div class="rounded-2xl bg-darkCard border border-gray-800 p-6 sm:p-8 hover:border-cyan-500/40 transition-all shadow-xl">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6">
+                        <i data-lucide="badge-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-4">Certifications & Standards</h3>
+                    <div class="space-y-3">
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>CFTR Tax Reporting</span>
+                            <span class="text-cyan-400">P4MI (2023)</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>Brevet A&B Certification</span>
+                            <span class="text-cyan-400">Bina Muda (2023)</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>TOEFL ITP (Score: 540)</span>
+                            <span class="text-cyan-400">ETS</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-gray-900 border border-gray-800 text-xs font-semibold text-gray-200 flex justify-between">
+                            <span>Academic Publications</span>
+                            <span class="text-cyan-400">6 Papers</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: ACHIEVEMENTS & PAPERS -->
+    <section id="achievements" class="py-24 bg-darkBg border-t border-gray-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-3 border border-emerald-500/20">
+                    <i data-lucide="mic" class="w-3.5 h-3.5"></i>
+                    <span>Speaker & Awards</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+                    Academic Papers & Conference Presentations
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="p-6 rounded-2xl bg-darkCard border border-gray-800 hover:border-cyan-500/40 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-bold">Speaker • ICOMESH 2024</span>
+                        <span class="text-xs text-gray-500">Sep 2024</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-2">Mapping the Nexus of Social Policy and Health Technology: A Bibliometric Analysis</h3>
+                    <p class="text-xs text-gray-400">Presented quantitative research modeling interdisciplinary health policies in Lampung, Indonesia.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-darkCard border border-gray-800 hover:border-emerald-500/40 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-bold">Speaker • STABEK 8 2024</span>
+                        <span class="text-xs text-gray-500">Jul 2024</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-2">Accounting Conservatism: A Qualitative Study of Practice and Its Implications</h3>
+                    <p class="text-xs text-gray-400">Explored financial reporting conservatism and managerial discretion in corporate governance.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-darkCard border border-gray-800 hover:border-cyan-500/40 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-bold">Speaker • 4th ULICOSS 2023</span>
+                        <span class="text-xs text-gray-500">Sep 2023</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-2">The Future of Participative Budgeting: A Qualitative Study</h3>
+                    <p class="text-xs text-gray-400">Delivered insights on employee participation in organizational budgeting and resource planning.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-darkCard border border-gray-800 hover:border-emerald-500/40 transition-all">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-bold">Awardee • P2MW Entrepreneurial Program</span>
+                        <span class="text-xs text-gray-500">Jun - Dec 2023</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-2">Ministry of Education Entrepreneurial Growth Grant</h3>
+                    <p class="text-xs text-gray-400">Awarded competitive funding for business model execution and sustainable financial development.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-slate-950/80 border-t border-gray-800/60 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-3 border border-emerald-500/20">
+                    <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                    <span>Contact Channel</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+                    Send a Message
+                </h2>
+                <p class="text-gray-400 text-base max-w-xl mx-auto">
+                    Feel free to reach out for executive accounting, pension fund inquiries, or collaborative financial projects.
+                </p>
+            </div>
+
+            <div class="rounded-3xl bg-darkCard border border-gray-800 p-8 sm:p-10 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-emerald-500"></div>
+
+                <form id="portfolio-contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">Your Name</label>
+                            <input type="text" id="name" required placeholder="e.g. Corporate Recruiter" class="w-full px-4 py-3.5 rounded-xl bg-gray-900 border border-gray-800 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">Email Address</label>
+                            <input type="email" id="email" required placeholder="e.g. user@company.com" class="w-full px-4 py-3.5 rounded-xl bg-gray-900 border border-gray-800 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2">Message</label>
+                        <textarea id="message" rows="4" required placeholder="Write your message or job inquiry here..." class="w-full px-4 py-3.5 rounded-xl bg-gray-900 border border-gray-800 text-white placeholder-gray-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm"></textarea>
+                    </div>
+
+                    <button type="submit" id="submit-btn" class="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-xl hover:opacity-90 transition-all shadow-lg shadow-cyan-500/20">
+                        <span>Submit Inquiry</span>
+                        <i data-lucide="send" class="w-4 h-4"></i>
+                    </button>
+                </form>
+
+                <div id="form-feedback" class="hidden mt-6 p-4 rounded-xl text-center text-sm font-semibold"></div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="mt-12 flex flex-col items-center">
+                <div class="flex items-center space-x-4">
+                    <a href="https://linkedin.com/in/abidzarsalghifari" target="_blank" rel="noopener" class="w-12 h-12 rounded-xl bg-darkCard border border-gray-800 flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:border-cyan-500/40 hover:bg-gray-800 transition-all" aria-label="LinkedIn Profile">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="mailto:abidzars.alghifari@gmail.com" class="w-12 h-12 rounded-xl bg-darkCard border border-gray-800 flex items-center justify-center text-gray-400 hover:text-emerald-400 hover:border-emerald-500/40 hover:bg-gray-800 transition-all" aria-label="Direct Email">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://ristek.link/AbidzarPorto" target="_blank" rel="noopener" class="w-12 h-12 rounded-xl bg-darkCard border border-gray-800 flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:border-cyan-500/40 hover:bg-gray-800 transition-all" aria-label="CV Portfolio Link">
+                        <i data-lucide="file-text" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 8: FOOTER -->
+    <footer class="py-10 bg-darkBg border-t border-gray-800/80 text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="flex items-center space-x-3">
+                    <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-emerald-500 text-slate-950 font-bold text-sm flex items-center justify-center">
+                        AS
+                    </span>
+                    <p class="text-xs text-gray-400">
+                        &copy; <span id="current-year"></span> Abidzar Septawandra Al-Ghifari. All rights reserved.
+                    </p>
+                </div>
+
+                <div class="flex items-center space-x-6 text-xs font-medium">
+                    <a href="#hero" class="hover:text-cyan-400 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
+                    <a href="#portfolio" class="hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                </div>
+
+                <a href="#hero" class="p-2.5 rounded-xl bg-darkCard border border-gray-800 text-gray-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-all" aria-label="Scroll to top">
+                    <i data-lucide="arrow-up" class="w-4 h-4"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL PREVIEW -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+        <div class="bg-darkCard border border-gray-800 rounded-3xl max-w-xl w-full p-6 sm:p-8 relative shadow-2xl transform transition-all scale-95 opacity-0 duration-200" id="modal-content">
+            <button onclick="closeModal()" class="absolute top-5 right-5 text-gray-400 hover:text-white p-2 rounded-xl hover:bg-gray-800 transition-all">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="inline-block px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-3" id="modal-category">
+                Category
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4" id="modal-title">Project Title</h3>
+            <p class="text-gray-300 text-sm leading-relaxed mb-6" id="modal-description">
+                Description goes here.
+            </p>
+            <div class="p-4 rounded-xl bg-gray-900 border border-gray-800 mb-6">
+                <div class="text-xs text-gray-400 font-medium">Key Outcome</div>
+                <div class="text-base font-bold text-emerald-400 mt-1" id="modal-impact">Key Metric</div>
+            </div>
+            <div class="flex justify-end">
+                <button onclick="closeModal()" class="px-5 py-2.5 text-xs font-bold text-white bg-gray-800 hover:bg-gray-700 rounded-xl transition-all">
+                    Close Preview
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT CODE -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function toggleMobileMenu() {
+            const isOpen = mobileMenu.classList.contains('hidden');
+            if (isOpen) {
+                mobileMenu.classList.remove('hidden');
+                menuIconOpen.classList.add('hidden');
+                menuIconClose.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMobileMenu();
+                }
+            });
+        });
+
+        // Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('border-cyan-500/40', 'bg-cyan-500/10', 'text-cyan-300');
+                    b.classList.add('border-gray-800', 'bg-darkCard', 'text-gray-400');
+                });
+
+                btn.classList.remove('border-gray-800', 'bg-darkCard', 'text-gray-400');
+                btn.classList.add('border-cyan-500/40', 'bg-cyan-500/10', 'text-cyan-300');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'flex';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(10px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 200);
+                    }
+                });
+            });
+        });
+
+        // Modal Logic
+        const modal = document.getElementById('project-modal');
+        const modalContent = document.getElementById('modal-content');
+
+        function openModal(title, description, category, impact) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-description').textContent = description;
+            document.getElementById('modal-category').textContent = category;
+            document.getElementById('modal-impact').textContent = impact;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 20);
+        }
+
+        function closeModal() {
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            modalContent.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.remove('flex');
+                modal.classList.add('hidden');
+            }, 200);
+        }
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById('submit-btn');
+            const feedback = document.getElementById('form-feedback');
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<span>Sending...</span>`;
+
+            setTimeout(() => {
+                feedback.classList.remove('hidden');
+                feedback.classList.add('bg-emerald-500/10', 'text-emerald-400', 'border', 'border-emerald-500/20');
+                feedback.textContent = 'Thank you! Your message has been sent successfully. Abidzar will respond promptly.';
+                
+                document.getElementById('portfolio-contact-form').reset();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `<span>Submit Inquiry</span><i data-lucide="send" class="w-4 h-4"></i>`;
+                lucide.createIcons();
+            }, 1000);
+        }
+
+        // Particle Canvas
+        const canvas = document.getElementById('hero-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initParticles();
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.radius = Math.random() * 1.6 + 0.4;
+                this.vx = (Math.random() - 0.5) * 0.35;
+                this.vy = (Math.random() - 0.5) * 0.35;
+                this.alpha = Math.random() * 0.5 + 0.2;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(6, 182, 212, ${this.alpha})`;
+                ctx.fill();
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            const count = Math.floor((canvas.width * canvas.height) / 18000);
+            for (let i = 0; i < count; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function animateCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < 100) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(16, 185, 129, ${0.12 * (1 - dist / 100)})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+
+            requestAnimationFrame(animateCanvas);
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        window.addEventListener('load', () => {
+            resizeCanvas();
+            animateCanvas();
+        });
+    </script>
+</body>
+</html>
